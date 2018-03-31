@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/splash_img3"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+    <cyc3253.xmlg.cycbike.custom.CircleImageView
+        android:id="@+id/userHeadImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <View
+        android:id="@+id/filler"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/userHeadImg"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/userNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filler"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="随时随地，任我骑行"
+        android:textColor="#e9e9e9"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_user"/>
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            android:layout_width="214dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:textColor="#CEC9E7"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/bt_username_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/cancel"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="262dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/accountLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7"/>
+
+    <LinearLayout
+        android:id="@+id/pwdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_pswd"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#CEC9E7"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/bt_pwd_eye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginRight="9dp"
+            android:src="@mipmap/eye_close"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/bt_password_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/cancel"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="262dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/pwdLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#dd0c0a18"
+        android:padding="10dp"
+        android:text="@string/login"
+        android:textColor="#CEC9E7"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/forgot_passwordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:layout_marginTop="7dp"
+        android:text="@string/forgot_password"
+        android:textColor="#CEC9E7"
+        android:textSize="14sp"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:text="新用户？赶紧注册"
+        android:textColor="#CEC9E7"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

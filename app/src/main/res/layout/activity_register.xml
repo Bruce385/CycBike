@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/splash_img3"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+    <View
+        android:id="@+id/filler"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filler"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="随时随地，任我骑行"
+        android:textColor="#e9e9e9"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_remark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_user"/>
+
+        <EditText
+            android:id="@+id/et_phoneNum"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#CEC9E7"
+            android:textSize="18sp"
+            android:textColorHint="@color/white_bb"
+            android:hint="请输入真实用户手机号码"/>
+
+        <ImageButton
+            android:id="@+id/bt_phoneNum_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/cancel"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/accountLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7"/>
+
+    <LinearLayout
+        android:id="@+id/pwdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_pswd"/>
+
+        <EditText
+            android:id="@+id/et_password1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#CEC9E7"
+            android:textSize="18sp"
+            android:textColorHint="@color/white_bb"
+            android:hint="密码7~15位字母+数字"/>
+
+        <ImageButton
+            android:id="@+id/bt_password_clear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/cancel"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/pwdLayout"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7"/>
+
+    <LinearLayout
+        android:id="@+id/pwdLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/regist_pswd"/>
+
+        <EditText
+            android:id="@+id/et_password2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#CEC9E7"
+            android:textSize="18sp"
+            android:textColorHint="@color/white_bb"
+            android:hint="确认密码"/>
+
+        <ImageButton
+            android:id="@+id/bt_password_clear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/cancel"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/pwdLayout2"
+        android:layout_centerHorizontal="true"
+        android:background="#CEC9E7"/>
+
+    <Button
+        android:id="@+id/registerFirstBtn"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#dd0c0a18"
+        android:padding="10dp"
+        android:text="@string/register"
+        android:textColor="#CEC9E7"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

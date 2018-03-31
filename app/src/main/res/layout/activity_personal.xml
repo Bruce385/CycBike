@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_ededed">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_343333"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:onClick="finishActivity"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@mipmap/return_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/personal_info"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:layout_margin="5dp"
+        android:background="@drawable/edge_shadow_bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/person_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/nick_name"
+                    android:textColor="@color/color_303030"
+                    android:textSize="22sp"/>
+
+                <LinearLayout
+                    android:id="@+id/accountLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/user_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="登录账号"
+                        android:textColor="@color/color_989898"
+                        android:textSize="16sp"/>
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:src="@mipmap/v"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <cyc3253.xmlg.cycbike.custom.CircleImageView
+                android:id="@+id/user_photo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="20dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/personal_photo_dark"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/person_nickName"
+                                style="@style/personalItemStyle">
+
+                    <TextView
+                        android:id="@+id/person_nickName_key"
+                        style="@style/personalItemKeyStyle"
+                        android:text="昵称"/>
+
+                    <TextView
+                        android:id="@+id/person_nickName_value"
+                        style="@style/personalItemValueStyle"
+                        android:layout_toStartOf="@+id/person_item_v1"/>
+
+                    <ImageView
+                        android:id="@+id/person_item_v1"
+                        style="@style/personalItemarrowsStyle"/>
+                </RelativeLayout>
+
+                <View style="@style/menu_divider_style"/>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/person_sex"
+                                style="@style/personalItemStyle">
+
+                    <TextView
+                        android:id="@+id/person_sex_key"
+                        style="@style/personalItemKeyStyle"
+                        android:text="性别"/>
+
+                    <TextView
+                        android:id="@+id/person_sex_value"
+                        style="@style/personalItemValueStyle"
+                        android:layout_toStartOf="@+id/person_item_v2"/>
+
+                    <ImageView
+                        android:id="@+id/person_item_v2"
+                        style="@style/personalItemarrowsStyle"/>
+                </RelativeLayout>
+
+                <View style="@style/menu_divider_style"/>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/person_identity"
+                                style="@style/personalItemStyle">
+
+                    <TextView
+                        android:id="@+id/person_identity_key"
+                        style="@style/personalItemKeyStyle"
+                        android:text="身份认证"/>
+
+                    <TextView
+                        android:id="@+id/person_identity_value"
+                        style="@style/personalItemValueStyle"
+                        android:layout_toStartOf="@+id/person_item_v4"/>
+
+                    <ImageView
+                        android:id="@+id/person_item_v4"
+                        style="@style/personalItemarrowsStyle"/>
+                </RelativeLayout>
+
+                <View style="@style/menu_divider_style"/>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/person_phone"
+                                style="@style/personalItemStyle">
+
+                    <TextView
+                        android:id="@+id/person_phone_key"
+                        style="@style/personalItemKeyStyle"
+                        android:text="手机号码"/>
+
+                    <TextView
+                        android:id="@+id/person_phone_value"
+                        style="@style/personalItemValueStyle"
+                        android:layout_toStartOf="@+id/person_item_v5"/>
+
+                    <ImageView
+                        android:id="@+id/person_item_v5"
+                        style="@style/personalItemarrowsStyle"/>
+                </RelativeLayout>
+
+                <View style="@style/menu_divider_style"/>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/person_mail"
+                                style="@style/personalItemStyle">
+
+                    <TextView
+                        android:id="@+id/person_mail_key"
+                        style="@style/personalItemKeyStyle"
+                        android:text="邮箱"/>
+
+                    <TextView
+                        android:id="@+id/person_mail_value"
+                        style="@style/personalItemValueStyle"
+                        android:layout_toStartOf="@+id/person_item_v6"/>
+
+                    <ImageView
+                        android:id="@+id/person_item_v6"
+                        style="@style/personalItemarrowsStyle"/>
+                </RelativeLayout>
+
+                <View style="@style/menu_divider_style"/>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/person_regidate"
+                                style="@style/personalItemStyle">
+
+                    <TextView
+                        android:id="@+id/person_regidate_key"
+                        style="@style/personalItemKeyStyle"
+                        android:text="注册日期"/>
+
+                    <TextView
+                        android:id="@+id/person_regidate_value"
+                        style="@style/personalItemValueStyle"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

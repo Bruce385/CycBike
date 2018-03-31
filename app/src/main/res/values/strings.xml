@@ -1,0 +1,107 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="bybike">随行单车</string>
+    <string name="findbike">找单车</string>
+    <string name="current_address">北京市海淀区海淀北二街8号中关村SOHO</string>
+    <string name="beijing">北京</string>
+    <string name="foot">步行</string>
+    <string name="distance">距离</string>
+    <string name="each_hour">每小时</string>
+    <string name="book">确定预约</string>
+    <string name="unlock">输码解锁</string>
+    <string name="unlock_auto">自动解锁</string>
+    <string name="bike_code">车辆编码</string>
+    <string name="book_countdown">保留倒计时</string>
+    <string name="bike_sound">车辆发声</string>
+    <string name="cancel_book">取消预约</string>
+    <string name="cancel_book_toast">超过预约时间，系统已自动结束</string>
+    <string name="code_unlock">输码解锁</string>
+    <string name="code_prompt">在车锁和车头位置，已有车辆编码</string>
+    <string name="unlock_im">立即解锁</string>
+    <string name="wallet">我的钱包</string>
+    <string name="route">我的行程</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="feedback">问题反馈</string>
+    <string name="guide">使用指南</string>
+    <string name="setting">设置</string>
+    <string name="account_ballance">账户余额&#160;0&#160;元</string>
+    <string name="transaction_type">请选择交易类型</string>
+    <string name="charge_im">马上充值</string>
+    <string name="routing">行程中</string>
+    <string name="price">0.5元</string>
+    <string name="route_detail">行程详情</string>
+    <string name="my_route">我的行程</string>
+    <string name="no_route">您还没有行程</string>
+    <string name="net_wifi">现已链接到Wi-Fi网络</string>
+    <string name="net_mobile">现已连接到移动网络</string>
+    <string name="net_none">现已进入无网世界</string>
+
+    <string name="bike_time">骑行时长</string>
+    <string name="bike_distance">骑行距离</string>
+    <string name="bike_price">费用计算</string>
+    <string name="routing_prompt">手动把车子锁上后，自动结束计费~</string>
+    <string name="book_prompt">预约车辆在您靠近时，自动解锁~</string>
+    <string name="bike_exception_prompt">如果你发现车子有异常，点击取消</string>
+    <string name="end">结束</string>
+    <string name="end_route">结束\n行程</string>
+    <string name="open_gps">请先打开GPS，提高定位准确度</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="navigation">导航</string>
+    <string name="begin_navigation">开始导航</string>
+    <string name="my_position">我的位置</string>
+    <string name="input_start_place">输入起点</string>
+    <string name="input_destination">输入终点</string>
+    <string name="please_input_start_place">请输入起点</string>
+    <string name="please_input_destination">请输入终点</string>
+    <string name="inner_navi">内置导航</string>
+    <string name="baidu_navi">百度地图</string>
+    <string name="gaode_navi">高德地图</string>
+
+    <string name="login">登 录</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="register">注 册</string>
+
+    <string name="demo_title_location">demo_title_location</string>
+    <string name="demo_desc_location">demo_desc_location</string>
+    <string name="demo_title_geocode">demo_title_geocode</string>
+    <string name="demo_desc_geocode">demo_desc_geocode</string>
+    <string name="app_name">随行单车</string>
+    <string name="personal_info">个人信息</string>
+    <string name="settings">设置</string>
+
+    <!--image-selector-->
+    <string name="folder_all">所有图片</string>
+    <string name="preview">Preview</string>
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">Select images amount is limit</string>
+    <string name="action_done">Done</string>
+    <string name="photo_unit">Shot</string>
+    <string name="tip_take_photo">Take photo</string>
+
+    <string name="select_images">选择图片</string>
+    <string name="gif_make">GIF制作</string>
+
+    <!--图片选择器-->
+    <string name="mis_folder_all">所有图片</string>
+    <string name="mis_preview">Preview</string>
+    <string name="mis_msg_no_camera">No system camera found</string>
+    <string name="mis_msg_amount_limit">Select images amount is limit</string>
+    <string name="mis_action_done">确定</string>
+    <string name="mis_action_button_string">%1$s(%2$d/%3$d)</string>
+    <string name="mis_photo_unit">Shot</string>
+    <string name="mis_tip_take_photo">Take photo</string>
+    <string name="mis_error_image_not_exist">Image error</string>
+    <string name="mis_error_no_permission">Has no permission</string>
+    <string name="mis_permission_dialog_title">Permission Deny</string>
+    <string name="mis_permission_dialog_ok">OK</string>
+    <string name="mis_permission_dialog_cancel">CANCEL</string>
+    <string name="mis_permission_rationale">Storage read permission is needed to pick files.</string>
+    <string name="mis_permission_rationale_write_storage">Storage write permission is needed to save the image.</string>
+
+    <string name="nick_name">新用户</string>
+    <string name="sex">性别</string>
+    <string name="submit">确定</string>
+
+
+</resources>
